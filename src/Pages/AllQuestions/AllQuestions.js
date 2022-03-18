@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getDataAction } from '../../ReduxManagement/Redux/actions';
 import QuestionCart from './QuestionCart';
 import YearPicker from "react-year-picker";
+import ReactPaginate from 'react-paginate';
 
 
 
@@ -15,9 +16,18 @@ const AllQuestions = () => {
 
     const [questions, setQuestions] = useState([]);
     const [department, setDepartment] = useState("")
-    console.log(department)
+    const [semester, setSemester] = useState("")
     const [year, setYear] = useState("")
-    console.log(year)
+    const [page, setPage] = useState(0)
+    const [pageCount, setPageCount] = useState(0)
+    const size = 10;
+
+    const handlePageChange = (data) => {
+        setPage(data.selected);
+    }
+
+
+
 
     // checkbox er value true or false return kore
 
@@ -30,25 +40,19 @@ const AllQuestions = () => {
 
 
 
-
-
-
-    // const department = ''
-    // const year = ''
     const status = ''
     useEffect(() => {
-        fetch(`https://blooming-sierra-74368.herokuapp.com/allQuestions?department=${department}&&year=${year}&&status=${status}`)
+        console.log(department, year, semester)
+        fetch(`http://localhost:5000/allQuestions?page=${page}&&size=${size}&&department=${department}&&year=${year}&&status=${status}&&semester=${semester}`)
             .then(res => res.json())
             .then(data => {
-                setQuestions(data)
-                console.log(data);
+                setQuestions(data.allQuestions)
 
-                // setQuestions(data.blogs)
-                // const count = data.count;
-                // const pageNumber = Math.ceil(count / size)
-                // setPageCount(pageNumber)
+                const count = data.count;
+                const pageNumber = Math.ceil(count / size)
+                setPageCount(pageNumber)
             })
-    }, [department]);
+    }, [department, year, semester, page]);
 
 
 
@@ -108,6 +112,64 @@ const AllQuestions = () => {
                                 </label>
                             </div>
                         </form>
+                        <form
+                            onChange={(e) => setYear(e.target.value)}
+                        >
+
+                            <div className="form-check align-items-center">
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label className="form-check-label fw-bold" for="flexCheckDefault">
+                                    empty
+                                </label>
+                            </div>
+                            <div className="form-check align-items-center">
+                                <input className="form-check-input" type="checkbox" value="2020" id="flexCheckDefault" />
+                                <label className="form-check-label fw-bold" for="flexCheckDefault">
+                                    2020
+                                </label>
+                            </div>
+                            <div className="form-check align-items-center">
+                                <input className="form-check-input" type="checkbox" value="2021" id="flexCheckDefault" />
+                                <label className="form-check-label fw-bold" for="flexCheckDefault">
+                                    2021
+                                </label>
+                            </div>
+                            <div className="form-check align-items-center">
+                                <input className="form-check-input" type="checkbox" value="2022" id="flexCheckDefault" />
+                                <label className="form-check-label fw-bold" for="flexCheckDefault">
+                                    2022
+                                </label>
+                            </div>
+                        </form>
+                        <form
+                            onChange={(e) => setSemester(e.target.value)}
+                        >
+
+                            <div className="form-check align-items-center">
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label className="form-check-label fw-bold" for="flexCheckDefault">
+                                    All
+                                </label>
+                            </div>
+                            <div className="form-check align-items-center">
+                                <input className="form-check-input" type="checkbox" value="CSE" id="flexCheckDefault" />
+                                <label className="form-check-label fw-bold" for="flexCheckDefault">
+                                    CSE
+                                </label>
+                            </div>
+                            <div className="form-check align-items-center">
+                                <input className="form-check-input" type="checkbox" value="ece" id="flexCheckDefault" />
+                                <label className="form-check-label fw-bold" for="flexCheckDefault">
+                                    EEE
+                                </label>
+                            </div>
+                            <div className="form-check align-items-center">
+                                <input className="form-check-input" type="checkbox" value="bba" id="flexCheckDefault" />
+                                <label className="form-check-label fw-bold" for="flexCheckDefault">
+                                    BBA
+                                </label>
+                            </div>
+                        </form>
 
 
 
@@ -121,6 +183,31 @@ const AllQuestions = () => {
                                 data={question}>
                             </QuestionCart>
                         ))}
+                    </div>
+                </div>
+
+                <div className="d-flex mt-5">
+                    <div className='mx-auto'>
+
+
+                        <ReactPaginate
+                            previousLabel={'previous'}
+                            nextLabel={'next'}
+                            breakLabel={'...'}
+                            marginPagesDisplayed={3}
+                            pageRangeDisplayed={3}
+                            pageCount={pageCount}
+                            onPageChange={handlePageChange}
+                            containerClassName='pagination'
+                            pageClassName='page-item'
+                            pageLinkClassName='page-link'
+                            previousClassName='page-link'
+                            nextClassName='page-link'
+                            breakClassName='page-item'
+                            breakLinkClassName='page-link'
+                            activeClassName='active'
+                        />
+
                     </div>
                 </div>
 
