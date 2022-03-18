@@ -12,7 +12,7 @@ const AdminQuestion = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allquestions`)
+        fetch(`https://blooming-sierra-74368.herokuapp.com/allquestions`)
             .then((res) => res.json())
             .then((data) => setQuestions(data));
     }, [user?.email]);
@@ -20,7 +20,7 @@ const AdminQuestion = () => {
 
 
     const handleUpdate = (id) => {
-        fetch(`http://localhost:5000/QuestionStatusUpdate/${id}`, {
+        fetch(`https://blooming-sierra-74368.herokuapp.com/QuestionStatusUpdate/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -38,10 +38,10 @@ const AdminQuestion = () => {
     return (
         < div className="container all-question-container" >
             <div className="text-center pb-3">
-                <h1 className="mb-5 text-center pt-5">Total questions <span className="text-danger">{questions.length}</span>  </h1>
+                <h1 className="mb-2 text-center pt-2">Total Questions <span className="text-danger">{questions.length}</span>  </h1>
             </div>
 
-            <table className="table table-dark" style={{ width: "100%" }}>
+            <table className="table table-gray" style={{ width: "100%" }}>
                 <thead  >
                     <tr className="bg-dark text-white mb-3 p-2" style={{ question: "1px solid red" }}>
 

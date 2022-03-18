@@ -26,7 +26,6 @@ const AddLabsDashboard = () => {
             });
     };
     return (
-
         <Container>
             <Row>
                 <Col md={{ span: 8, offset: 2 }}>

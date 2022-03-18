@@ -8,7 +8,7 @@ const EditProfile = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         data.complete = true
-        fetch(`http://localhost:5000/updateUser`, {
+        fetch(`https://blooming-sierra-74368.herokuapp.com/updateUser`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

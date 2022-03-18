@@ -1,0 +1,271 @@
+[
+    {
+        "id": "1",
+        "department": "CSE",
+        "subject": "C#  Programming",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/file/d/1thbxKhyj303IfnPWU3GF26L6xT6C6vb5/view?usp=sharing",
+        "author": "Jamie Chan"
+    },
+    {
+        "id": "2",
+        "department": "CSE",
+        "subject": "C-Programming",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/1kXLTT8w0WBVqOqnOfIaOHgEwU_ei6jIK/view?usp=sharing",
+        "author": "Noel Kalicharan"
+    },
+    {
+        "id": "3",
+        "department": "CSE",
+        "subject": "The Full Stack",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1nGBpXb-AcF65Yf4-Yru-9BmaK7VytKbi/view?usp=sharing",
+        "author": "Chris Northwood"
+    },
+    {
+        "id": "4",
+        "department": "EEE",
+        "subject": "Fundamentals of Electrical Engineering I",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/file/d/1QbDvX1rdNSih5HFO-YXDemS3XrFJWmhG/view?usp=sharing"
+    },
+    {
+        "id": "5",
+        "department": "EEE",
+        "subject": "Electromagnetics and  Applications",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/1bmOGmO8kNNCyYpuxDspWgafgem_LVPnR/view?usp=sharing",
+        "author": "Donald S Bloswick"
+    },
+    {
+        "id": "6",
+        "department": "EEE",
+        "subject": "Electrical Safety for Engineering",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1C57CMwzhXtQOfE0PF-EqPNmnZFS6wsA2/view?usp=sharing",
+        "author": "Donald S Bloswick"
+    },
+    {
+        "id": "7",
+        "department": "ECE",
+        "subject": "Electronic Engineering",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/file/d/1vEqDPjRV9EmBLmd9_zYUH2y9vvEmGu8N/view?usp=sharing",
+        "author": "Valery Vodovozov"
+    },
+    {
+        "id": "8",
+        "department": "EEE",
+        "subject": "ELECTRICAL CIRCUITS",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/1szzyWRbVjXxwZgmSWZsXEggL8J3AotFs/view?usp=sharing",
+        "author": "Donald S Bloswick"
+    },
+    {
+        "id": "9",
+        "department": "ECE",
+        "subject": "Engineering Analysis",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1o3m9STb3a0pUHCygAX5I9zQ7pVUSt86Y/view?usp=sharing",
+        "author": "prof Peter Yk"
+    },
+    {
+        "id": "10",
+        "department": "CSE",
+        "subject": "C++  Programming",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/file/d/1bxGWgq5xjmLpFrKq25BwyqOGbRiW4Fm7/view?usp=sharing",
+        "author": "Stephen Hoffman"
+    },
+    {
+        "id": "11",
+        "department": "CSE",
+        "subject": "Calculas II",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/10rqQ_G-9BPRab-iu114plvKTrc427Lwi/view?usp=sharing",
+        "author": "Mark Zegarelli"
+    },
+    {
+        "id": "12",
+        "department": "CSE",
+        "subject": "Database System",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1_2_gm956IYyaBbdpv0T0_ubJspGKMmV5/view?usp=sharing",
+        "author": "Jamie Chan"
+    },
+    {
+        "id": "13",
+        "department": "CSE",
+        "subject": "Introductory Method of Numerical",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/file/d/1tFKBS9nqRwjEzkrZaDnqaOicSkqeUvyg/view?usp=sharing",
+        "author": "S.S.Sastry"
+    },
+    {
+        "id": "14",
+        "department": "CSE",
+        "subject": "Javascript & Query",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/1tRc_TXq8vVezSP2Fy8nLiylovv4xdy-o/view?usp=sharing",
+        "author": "JON DUCKETT"
+    },
+    {
+        "id": "15",
+        "department": "CSE",
+        "subject": "JavaScript",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1otvVt0KjQSUExODuVy-8RRX6OaaNIKaL/view?usp=sharing",
+        "author": "Stephen Blumenthal"
+    },
+    {
+        "id": "16",
+        "department": "CSE",
+        "subject": "Practical React Native",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/file/d/1zWa35XcOuCL2N3IS70k_Gh3-E7MuHjYm/view?usp=sharing",
+        "author": "Frank Zammetti"
+    },
+    {
+        "id": "17",
+        "department": "CSE",
+        "subject": "Pro Mern Stack",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/1PdoLAin0spdk-Q6nn2XdseyODuMoGCAo/view?usp=sharing",
+        "author": "Vasan Subramanian"
+    },
+    {
+        "id": "18",
+        "department": "CSE",
+        "subject": "Software Development for Engineers",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1RrrvdzCg5Bf080Va27z5XEItsGl-moWZ/view?usp=sharing",
+        "author": "William J. Buchanan, BSc, CEng, PhD"
+    },
+    {
+        "id": "19",
+        "department": "CSE",
+        "subject": "DISCRETE MATHEMATICS",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/file/d/1WuCfDlKPMen3qKODHgp9P6dWEoHKrK0Y/view?usp=sharing",
+        "author": "SEYMOUR LIPSCHUTZ, Ph.D."
+    },
+    {
+        "id": "20",
+        "department": "CSE",
+        "subject": "C-Programming",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/1kXLTT8w0WBVqOqnOfIaOHgEwU_ei6jIK/view?usp=sharing",
+        "author": "Noel Kalicharan"
+    },
+    {
+        "id": "21",
+        "department": "bba",
+        "subject": "GitLab",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1FvLdnUpcb7IjNeg9DxV2VydOxxXEFiye/view?usp=sharing",
+        "author": "Jamie Chan"
+    },
+    {
+        "id": "22",
+        "department": "EEE",
+        "subject": "Fundamentals of Electrical Engineering I",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/file/d/1QbDvX1rdNSih5HFO-YXDemS3XrFJWmhG/view?usp=sharing",
+        "author": "Donald S Bloswick"
+    },
+    {
+        "id": "23",
+        "department": "EEE",
+        "subject": "Electromagnetics and  Applications",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/1bmOGmO8kNNCyYpuxDspWgafgem_LVPnR/view?usp=sharing",
+        "author": "Donald S Bloswick"
+    },
+    {
+        "id": "24",
+        "department": "EEE",
+        "subject": "Electrical Safety for Engineering",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1C57CMwzhXtQOfE0PF-EqPNmnZFS6wsA2/view?usp=sharing",
+        "author": "Donald S Bloswick"
+    },
+    {
+        "id": "25",
+        "department": "ECE",
+        "subject": "Electronic Engineering",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/file/d/1vEqDPjRV9EmBLmd9_zYUH2y9vvEmGu8N/view?usp=sharing",
+        "author": "Valery Vodovozov"
+    },
+    {
+        "id": "26",
+        "department": "EEE",
+        "subject": "ELECTRICAL CIRCUITS",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/1szzyWRbVjXxwZgmSWZsXEggL8J3AotFs/view?usp=sharing",
+        "author": "Donald S Bloswick"
+    },
+    {
+        "id": "27",
+        "department": "ECE",
+        "subject": "Engineering Analysis",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1o3m9STb3a0pUHCygAX5I9zQ7pVUSt86Y/view?usp=sharing",
+        "author": "prof Peter Yk"
+    }
+]

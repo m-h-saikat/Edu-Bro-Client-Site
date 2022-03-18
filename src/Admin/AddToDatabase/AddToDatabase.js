@@ -12,7 +12,7 @@ const AddToDatabase = () => {
     data.email = user.email;
     data.status = "approved";
     axios
-      .post("http://localhost:5000/blogs", data)
+      .post("https://blooming-sierra-74368.herokuapp.com/blogs", data)
 
       .then((res) => {
         if (res.data.insertedId) {

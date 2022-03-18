@@ -1,21 +1,23 @@
 [
     {
         "id": "1",
-        "department": "ECE",
-        "subject": "Web  Programming",
+        "department": "CSE",
+        "subject": "C#  Programming",
         "year": "2021",
         "code": "101",
         "semester": "Fall-2021",
-        "url": "https://drive.google.com/file/d/1URjCSpex4tCwqxQ6Pj7H3CFgw8BTWAfK/view?usp=sharing"
+        "url": "https://drive.google.com/file/d/1thbxKhyj303IfnPWU3GF26L6xT6C6vb5/view?usp=sharing",
+        "author": "Jamie Chan"
     },
     {
         "id": "2",
-        "department": "cse",
+        "department": "CSE",
         "subject": "C-Programming",
         "year": "2022",
         "semester": "Spring-2022",
         "code": "102",
-        "url": "https://drive.google.com/file/d/1MOxPcyhJWh5LhthfvJxQs030eb2AADZX/view?usp=sharing"
+        "url": "https://drive.google.com/file/d/1kXLTT8w0WBVqOqnOfIaOHgEwU_ei6jIK/view?usp=sharing",
+        "author": "Noel Kalicharan"
     },
     {
         "id": "3",

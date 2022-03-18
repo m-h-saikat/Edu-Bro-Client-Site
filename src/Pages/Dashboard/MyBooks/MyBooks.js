@@ -9,7 +9,7 @@ const MyBooks = () => {
     const [books, setBooks] = useState([])
 
     useEffect(() => {
-        fetch(` http://localhost:5000/myBooks/${user?.email}`)
+        fetch(` https://blooming-sierra-74368.herokuapp.com/myBooks/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setBooks(data));
     }, [user?.email]);

@@ -10,7 +10,7 @@ const AdminBlogs = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allBlogs`)
+        fetch(`https://blooming-sierra-74368.herokuapp.com/allBlogs`)
             .then((res) => res.json())
             .then((data) => setBlogs(data));
     }, [user?.email]);
@@ -18,7 +18,7 @@ const AdminBlogs = () => {
 
 
     const handleUpdate = (id) => {
-        fetch(`http://localhost:5000/BlogStatusUpdate/${id}`, {
+        fetch(`https://blooming-sierra-74368.herokuapp.com/BlogStatusUpdate/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -38,10 +38,9 @@ const AdminBlogs = () => {
     return (
         < div className="container all-blog-container" >
             <div className="text-center pb-3">
-                <h1 className="mb-5 text-center pt-5">Total Blogs <span className="text-danger">{blogs.length}</span>  </h1>
+                <h1 className="mb-2 text-center pt-2">Total Blogs <span className="text-danger">{blogs.length}</span>  </h1>
             </div>
-
-            <table className="table table-dark" style={{ width: "100%" }}>
+            <table className="table table-gray" style={{ width: "100%" }}>
                 <thead  >
                     <tr className="bg-dark text-white mb-3 p-2" style={{ blog: "1px solid red" }}>
 

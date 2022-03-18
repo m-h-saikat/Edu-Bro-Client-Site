@@ -41,6 +41,8 @@ import AddSyllabusDashboard from './Pages/Dashboard/AddSyllabusDashboard/AddSyll
 import AllSyllabus from './Pages/AllSyllabus/AllSyllabus';
 import MySyllabus from './Pages/Dashboard/MySyllabus/MySyllabus';
 import AdminSyllabus from './Pages/AdminDashboard/AdminSyllabus/AdminSyllabus';
+import AdminRoute from './Login/AdminRoute/AdminRoute';
+import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
 import MyLabs from './Pages/Dashboard/MyLabs/MyLabs';
 import AddLabsDashboard from './Pages/Dashboard/AddLabsDashboard/AddLabsDashboard';
 import AllLabs from './Pages/AllLabs/AllLabs';
@@ -57,29 +59,27 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-
             <Route path="/allQuestions" element={<AllQuestions />} />
             <Route path="/allBooks" element={<AllBooks />} />
             <Route path="/allSyllabus" element={<AllSyllabus />} />
             <Route path="/allBlogs" element={<AllBlogs />} />
-            <Route path="/allBlogs" element={<AllBlogs />} />
+            <Route path="/allNotes" element={<AllNotes />} />
             <Route path="/allLabs" element={<AllLabs />} />
             <Route path='/find-questions' element={<FindQuestions />} />
             <Route path='/forum' element={<Forum />} />
 
             {/* Admin Dashboard  */}
 
-            <Route path='/admin-dashboard' element={<AdminDashboard />}>
-              <Route path='/admin-dashboard' element={<AdminWelcome />} />
-              <Route path='/admin-dashboard/welcome' element={<AdminWelcome />} />
-              <Route path='/admin-dashboard/admin-questions' element={<AdminQuestion />} />
-              <Route path='/admin-dashboard/admin-blogs' element={<AdminBlogs />} />
-              <Route path='/admin-dashboard/admin-notes' element={<AdminNotes />} />
-              <Route path='/admin-dashboard/admin-books' element={<AdminBooks />} />
-              <Route path='/admin-dashboard/admin-syllabus' element={<AdminSyllabus />} />
-              <Route path='/admin-dashboard/manage-questions' element={<ManageQuestion />} />
-              <Route path='/admin-dashboard/make-admin' element={<MakeAdmin />} />
+            <Route path='/admin-dashboard' element={<AdminRoute><AdminDashboard /></AdminRoute>}>
+              <Route path='/admin-dashboard' element={<AdminRoute><AdminWelcome /></AdminRoute>} />
+              <Route path='/admin-dashboard/welcome' element={<AdminRoute><AdminWelcome /></AdminRoute>} />
+              <Route path='/admin-dashboard/admin-questions' element={<AdminRoute><AdminQuestion /></AdminRoute>} />
+              <Route path='/admin-dashboard/admin-blogs' element={<AdminRoute><AdminBlogs /></AdminRoute>} />
+              <Route path='/admin-dashboard/admin-notes' element={<AdminRoute><AdminNotes /></AdminRoute>} />
+              <Route path='/admin-dashboard/admin-books' element={<AdminRoute><AdminBooks /></AdminRoute>} />
+              <Route path='/admin-dashboard/admin-syllabus' element={<AdminRoute><AdminSyllabus /></AdminRoute>} />
+              <Route path='/admin-dashboard/manage-questions' element={<AdminRoute><ManageQuestion /></AdminRoute>} />
+              <Route path='/admin-dashboard/make-admin' element={<AdminRoute><MakeAdmin /></AdminRoute>} />
             </Route>
 
             {/* User Dashboard  */}
@@ -109,6 +109,7 @@ function App() {
               <Route path='/dashboard/edit-profile' element={<EditProfile />} />
               <Route path='/dashboard/pending-questions' element={<PendingQuestions />} />
             </Route>
+
             <Route path='/question-details/:id' element={<QuestionDetailsSolve />} />
 
             <Route path='/blog-details/:id' element={<BlogDetails />} />

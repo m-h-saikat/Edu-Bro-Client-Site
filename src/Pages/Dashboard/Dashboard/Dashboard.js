@@ -39,17 +39,17 @@ const Dashboard = () => {
                             <li>
                                 <NavLink to={`my-books`} style={({ isActive }) => ({
                                     color: isActive ? "#B22222" : "black",
-                                })}><FaBookmark className='me-1' /> My Books</NavLink>
+                                })}><FaCommentDots className='me-1' /> My Books</NavLink>
                             </li>
                             <li>
                                 <NavLink to={`my-syllabus`} style={({ isActive }) => ({
                                     color: isActive ? "#B22222" : "black",
-                                })}><FaBookmark className='me-1' /> My Syllabus</NavLink>
+                                })}><FaSchool className='me-1' /> My Syllabus</NavLink>
                             </li>
                             <li>
                                 <NavLink to={`my-blogs`} style={({ isActive }) => ({
                                     color: isActive ? "#B22222" : "black",
-                                })}><FaBookmark className='me-1' /> My Blogs</NavLink>
+                                })}><FaTasks className='me-1' /> My Blogs</NavLink>
                             </li>
                             <li>
                                 <NavLink to={`user-review`} style={({ isActive }) => ({
@@ -59,7 +59,7 @@ const Dashboard = () => {
                             <li>
                                 <NavLink to={`my-notes`} style={({ isActive }) => ({
                                     color: isActive ? "#B22222" : "black",
-                                })}><FaBookmark className='me-1' /> My Notes</NavLink>
+                                })}><FaUserShield className='me-1' /> My Notes</NavLink>
                             </li>
                             {/* <li>
                                 <NavLink to={`pending-questions`} style={({ isActive }) => ({

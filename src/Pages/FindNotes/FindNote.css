@@ -1,0 +1,25 @@
+.search-questions h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    width: 50%;
+    padding-left: 15px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #B22222;
+    border-radius: 30px;
+    padding-right: 50px;
+}
+
+.search-btn {
+    outline: none;
+    border: 0;
+    background: #B22222;
+    color: white;
+    padding: 9px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-left: -50px;
+}

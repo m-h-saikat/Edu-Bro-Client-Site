@@ -8,7 +8,7 @@ const MyNotes = () => {
     const [notes, setNotes] = useState([])
 
     useEffect(() => {
-        fetch(` http://localhost:5000/mynotes/${user?.email}`)
+        fetch(` https://blooming-sierra-74368.herokuapp.com/mynotes/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setNotes(data));
     }, [user?.email]);

@@ -1,0 +1,83 @@
+[
+    {
+        "id": "1",
+        "department": "ECE",
+        "subject": "Web  Programming",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/drive/folders/1AqvSyKkkssDDX-cTFE62M1l0PnIk3q0B?fbclid=IwAR0tktFTvrL154fvn_otxxJK0FJYysT-ebPamHWkXCTC0v49Fummtq3GhJY"
+    },
+    {
+        "id": "2",
+        "department": "cse",
+        "subject": "C-Programming",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/1MOxPcyhJWh5LhthfvJxQs030eb2AADZX/view?usp=sharing"
+    },
+    {
+        "id": "3",
+        "department": "bba",
+        "subject": "GitLab",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1FvLdnUpcb7IjNeg9DxV2VydOxxXEFiye/view?usp=sharing"
+    },
+    {
+        "id": "4",
+        "department": "ECE",
+        "subject": "Web  Programming",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/file/d/1URjCSpex4tCwqxQ6Pj7H3CFgw8BTWAfK/view?usp=sharing"
+    },
+    {
+        "id": "5",
+        "department": "cse",
+        "subject": "C-Programming",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/1MOxPcyhJWh5LhthfvJxQs030eb2AADZX/view?usp=sharing"
+    },
+    {
+        "id": "6",
+        "department": "bba",
+        "subject": "GitLab",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1FvLdnUpcb7IjNeg9DxV2VydOxxXEFiye/view?usp=sharing"
+    },
+    {
+        "id": "7",
+        "department": "ECE",
+        "subject": "Web  Programming",
+        "year": "2021",
+        "code": "101",
+        "semester": "Fall-2021",
+        "url": "https://drive.google.com/file/d/1URjCSpex4tCwqxQ6Pj7H3CFgw8BTWAfK/view?usp=sharing"
+    },
+    {
+        "id": "8",
+        "department": "cse",
+        "subject": "C-Programming",
+        "year": "2022",
+        "semester": "Spring-2022",
+        "code": "102",
+        "url": "https://drive.google.com/file/d/1MOxPcyhJWh5LhthfvJxQs030eb2AADZX/view?usp=sharing"
+    },
+    {
+        "id": "9",
+        "department": "bba",
+        "subject": "GitLab",
+        "year": "2022",
+        "code": "103",
+        "semester": "Summer-2021",
+        "url": "https://drive.google.com/file/d/1FvLdnUpcb7IjNeg9DxV2VydOxxXEFiye/view?usp=sharing"
+    }
+]

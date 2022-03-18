@@ -5,7 +5,7 @@ const AllSyllabus = () => {
 
     const [syllabus, setSyllabus] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/allSyllabus')
+        fetch('https://blooming-sierra-74368.herokuapp.com/allSyllabus')
             .then(res => res.json())
             .then(data => setSyllabus(data))
     }, [])

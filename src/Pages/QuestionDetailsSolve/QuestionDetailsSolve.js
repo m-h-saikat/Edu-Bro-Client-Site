@@ -31,7 +31,7 @@ const QuestionDetailsSolve = () => {
 
         // post solve 
 
-        fetch(`http://localhost:5000/addQuestionSolve`, {
+        fetch(`https://blooming-sierra-74368.herokuapp.com/addQuestionSolve`, {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
@@ -50,7 +50,7 @@ const QuestionDetailsSolve = () => {
     // get question 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/question/${id}`)
+        fetch(`https://blooming-sierra-74368.herokuapp.com/question/${id}`)
             .then(res => res.json())
             .then(data => {
                 setQuestion(data)
@@ -62,7 +62,7 @@ const QuestionDetailsSolve = () => {
 
     // get solve 
     useEffect(() => {
-        fetch(`http://localhost:5000/questionSolve/${id}`)
+        fetch(`https://blooming-sierra-74368.herokuapp.com/questionSolve/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setQuestionSolves(data)

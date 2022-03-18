@@ -1,0 +1,20 @@
+.manage-questions h2, .pending-questions h2, .my-questions h2{
+    margin-bottom: 30px;
+}
+
+.details-btn{
+    color: #B22222;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .4s;
+    border: 0;
+    outline: none;
+}
+.details-btn:hover{
+    text-decoration: underline;
+}
+.btn-delete{
+    margin-left: 10px;
+    cursor: pointer;
+    color: #B22222;
+}

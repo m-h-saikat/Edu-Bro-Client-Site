@@ -6,6 +6,7 @@ import useFirebase from '../../../hooks/useFirebase';
 
 const AdminDashboard = () => {
     const { admin } = useFirebase()
+    console.log(admin)
     return (
         <div className='dashboard'>
             <Row>

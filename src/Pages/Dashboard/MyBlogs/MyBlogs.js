@@ -12,7 +12,7 @@ const MyBlogs = () => {
     const [blogs, setBlogs] = useState([])
 
     useEffect(() => {
-        fetch(` http://localhost:5000/myBlogs/${user?.email}`)
+        fetch(` https://blooming-sierra-74368.herokuapp.com/myBlogs/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setBlogs(data));
     }, [user?.email]);
@@ -22,7 +22,7 @@ const MyBlogs = () => {
 
 
     // const handleBlogDeleteRequest = (data) => {
-    //     fetch("http://localhost:5000/requestBlogsDelete", {
+    //     fetch("https://blooming-sierra-74368.herokuapp.com/requestBlogsDelete", {
     //         method: "PUT",
     //         headers: { "content-type": "application/json" },
     //         body: JSON.stringify(data),

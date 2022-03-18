@@ -12,7 +12,7 @@ const AdminBooks = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allBooks`)
+        fetch(`https://blooming-sierra-74368.herokuapp.com/allBooks`)
             .then((res) => res.json())
             .then((data) => setBooks(data));
     }, [user?.email]);
@@ -20,7 +20,7 @@ const AdminBooks = () => {
 
 
     const handleUpdate = (id) => {
-        fetch(`http://localhost:5000/BookStatusUpdate/${id}`, {
+        fetch(`https://blooming-sierra-74368.herokuapp.com/BookStatusUpdate/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -39,10 +39,10 @@ const AdminBooks = () => {
     return (
         < div className="container all-book-container" >
             <div className="text-center pb-3">
-                <h1 className="mb-5 text-center pt-5">Total Books <span className="text-danger">{books.length}</span>  </h1>
+                <h1 className="mb-2 text-center pt-2">Total Books <span className="text-danger">{books.length}</span>  </h1>
             </div>
 
-            <table className="table table-dark" style={{ width: "100%" }}>
+            <table className="table table-gray" style={{ width: "100%" }}>
                 <thead  >
                     <tr className="bg-dark text-white mb-3 p-2" style={{ book: "1px solid red" }}>
                         <th >Number</th>

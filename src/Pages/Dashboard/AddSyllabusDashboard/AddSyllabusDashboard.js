@@ -11,7 +11,7 @@ const AddSyllabusDashboard = () => {
     data.email = user.email;
     data.status = "Pending";
 
-    fetch(`http://localhost:5000/postSyllabus`, {
+    fetch(`https://blooming-sierra-74368.herokuapp.com/postSyllabus`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
@@ -37,7 +37,7 @@ const AddSyllabusDashboard = () => {
                 placeholder="Department"
               />{" "}
               <br />
-           
+
               <input
                 className="w-75 mb-3"
                 {...register("year", { required: true })}

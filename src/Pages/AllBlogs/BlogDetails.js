@@ -60,7 +60,7 @@ export default BlogDetails;
 //         data.userName = user.displayName
 //         data.userEmail = user.email
 
-//         fetch(`http://localhost:5000/PostBlogComment`, {
+//         fetch(`https://blooming-sierra-74368.herokuapp.com/PostBlogComment`, {
 //             method: "POST",
 //             headers: { "content-type": "application/json" },
 //             body: JSON.stringify(data),
@@ -78,7 +78,7 @@ export default BlogDetails;
 
 
 //     useEffect(() => {
-//         fetch(`http://localhost:5000/getBlogComment/${id}`)
+//         fetch(`https://blooming-sierra-74368.herokuapp.com/getBlogComment/${id}`)
 //             .then((res) => res.json())
 //             .then((data) => {
 //                 setBlogComments(data)
