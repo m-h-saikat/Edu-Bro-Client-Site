@@ -1,6 +1,5 @@
 .footer-area{
-    background-color: #B22222;
-
+    background-color: #1289A7;
     /* position: fixed; */
     width: 100%;
     left: 0;
@@ -48,7 +47,7 @@
     font-weight: 600;
     padding: 6px 0;
     text-transform: capitalize;
-    color: #B22222;
+    color: #1289A7;
     border-radius: 30px;
     transition: all .4s;
 }

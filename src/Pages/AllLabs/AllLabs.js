@@ -4,15 +4,33 @@
 
 import React, { useEffect, useState } from 'react';
 import LabsCart from './LabsCart'
+import ReactPaginate from 'react-paginate';
+
 
 const AllLabs = () => {
     const [labs, setLabs] = useState([]);
+    const [page, setPage] = useState(0)
+    const [pageCount, setPageCount] = useState(0)
+    const size = 10;
+
+    const handlePageChange = (data) => {
+        setPage(data.selected);
+    }
+
+
     useEffect(() => {
-        fetch('http://localhost:5000/allLabs')
+
+        fetch(`http://localhost:5000/allLabs?page=${page}&&size=${size}`)
             .then(res => res.json())
-            .then(data => setLabs(data))
-    }, [])
-    console.log(labs)
+            .then(data => {
+                setLabs(data.allLabs)
+
+                const count = data.count;
+                const pageNumber = Math.ceil(count / size)
+                setPageCount(pageNumber)
+            })
+    }, [page]);
+
 
 
     return (
@@ -28,9 +46,40 @@ const AllLabs = () => {
                     </LabsCart>
 
                 ))}
+
+
+            </div >
+
+
+
+            <div className="d-flex mt-5">
+                <div className='mx-auto'>
+
+
+                    <ReactPaginate
+                        previousLabel={'previous'}
+                        nextLabel={'next'}
+                        breakLabel={'...'}
+                        marginPagesDisplayed={3}
+                        pageRangeDisplayed={3}
+                        pageCount={pageCount}
+                        onPageChange={handlePageChange}
+                        containerClassName='pagination'
+                        pageClassName='page-item'
+                        pageLinkClassName='page-link'
+                        previousClassName='page-link'
+                        nextClassName='page-link'
+                        breakClassName='page-item'
+                        breakLinkClassName='page-link'
+                        activeClassName='active'
+                    />
+
+                </div>
             </div>
 
-        </div>
+        </div >
+
+
     );
 };
 

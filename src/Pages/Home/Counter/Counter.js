@@ -10,7 +10,7 @@ const Counter = () => {
                 <Row></Row>
                 <Col>
                     <div className="section-title text-center mb-5">
-                        <h3>Our Achievements</h3>
+                        <h3>Find Our Achievements</h3>
                         <span></span>
                     </div>
                 </Col>

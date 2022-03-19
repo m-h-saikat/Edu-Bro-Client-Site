@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import Rating from '../../../Shared/Rating/Rating'
+import Rating from '../../../Home/Rating/Rating'
 
 
 

@@ -3,7 +3,7 @@ import React from 'react';
 const SyllabusCart = ({ data }) => {
 
 
-    const { year,syllabusName ,driveLink } = data
+    const { year, syllabusName, driveLink } = data
 
     let googleId = driveLink?.slice(32, 65);
     console.log(driveLink)
@@ -18,7 +18,7 @@ const SyllabusCart = ({ data }) => {
                 <div className="card-body">
                     <h5 className="card-title"><b>Department</b> {syllabusName}</h5>
                     <h5 className="card-title"><b>Year</b> {year}</h5>
-                   
+
                     <div className="d-flex justify-content-between pt-3" >
                         <button className="btn-style download-btn " ><a href={download} className="">Download</a></button>
                         <button className="btn-style download-btn " ><a href={viewUrl} className="">See Syllabus</a></button>
